@@ -11,9 +11,9 @@ class Solution:
         return [] #Returns blank if no answer is found.
 
 #This approach works by starting at the first index of the array and progressively going through and adding all other values
-#to find the solution. If it isn't found with the first element and any other element, then we start with the second number
-#in the array and try the numbers after that one by one. This approach prevents the code making unnecessary reptitions, since we've
-#already checked adding the ith value and all numbers before it.
+#..to find the solution. If it isn't found with the first element and any other element, then we start with the second number
+#..in the array and try the numbers after that one by one. This approach prevents the code making unnecessary reptitions, since we've
+#..already checked adding the ith value and all numbers before it.
 
 #EX: [1,2,4,6,7], target : 10
 
