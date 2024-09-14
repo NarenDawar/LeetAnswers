@@ -13,13 +13,13 @@ class Solution:
         for char in reversed(s):
             current_value = roman_map[char]  # Get the value of the current Roman numeral.
             
-            # If the current value is less than the previous value, subtract it
+            # If the current value is less than the previous value, subtract it.
             if current_value < prev_value:
                 total -= current_value
             else:
-                total += current_value  # Otherwise, add the current value
+                total += current_value  # Otherwise, add the current value.
             
-            # Update the previous value for the next iteration
+            # Update the previous value for the next iteration.
             prev_value = current_value
         
         return total
