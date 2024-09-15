@@ -19,6 +19,8 @@ class Solution:
 #To solve this problem, we utilize a tracker, which is "k" in this case. In any instance where the current number doesn't equal the prior number, we move k up. 
 #If the numbers are equal, then we keep the value of k, because k covers that duplicate, so we wait until we find another unique number to remove the duplicate since k covers the duplicate index.
 
+#Time complexity: O(n)
+
 #EX: [1,1,2,3,5,5]
 #Step 1: k=1, nums[1] == nums[0], so nothing happens.
 #Step 2: k=1, nums[2] != nums[1], so nums[k], which is nums[1], is now equal to nums[2]. K is now 2.

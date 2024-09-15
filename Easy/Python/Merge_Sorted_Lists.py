@@ -32,6 +32,8 @@ class Solution:
 #This approach utilizes a dummy starter node to make a new list. We traverse through both lists, comparing nodes and adding the smaller values first from either list.
 #This approach is pretty simple and traverses two lists at once until one is exhaused, effectively adding all remaining values from the longer list to the new merged list, "current".
 
+#Time complexity: O(n + m), where n & m are the number of nodes in list1 and list2, respectively.
+
 #EX: [1,3,4,5] & [1,2,2,5,7]
 #Step 1: Traversing through the first condition (list1.val < list2.val), 1 isn't less than 1, so we add the value from list, which is also 1.
 #Step 2: Now comparing index 0 (1) from list and index 1 from list 2 (2), list1.val is less than list2.val, so we now add the other 1.

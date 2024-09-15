@@ -2,24 +2,37 @@ nums = []
 target = "SOME_INTEGER"
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]: #Set the return type to List.
-        leng = len(nums) #Set the leng value for looping equal to the length of the array.
-        for i in range(leng - 1): #Iterate through the entire array.
-            for j in range(i + 1, leng): #Iterate from the ith position through the rest of the array.
-                if (nums[i] + nums[j] == target): #Check if the two numbers add up to the target value during the current iteration.
-                    return [i, j] #Return the two indices.
-        return [] #Returns blank if no answer is found.
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        # Dictionary to store the number and its index
+        seen = {}
+        
+        # Loop through each element in the array.
+        for i, num in enumerate(nums):
+            # Calculate the complement.
+            complement = target - num
+            
+            # If the complement is already in the dictionary, return the indices.
+            if complement in seen:
+                return [seen[complement], i]
+            
+            # Otherwise, store the current number and its index
+            seen[num] = i
 
-#This approach works by starting at the first index of the array and progressively going through and adding all other values
-#..to find the solution. If it isn't found with the first element and any other element, then we start with the second number
-#..in the array and try the numbers after that one by one. This approach prevents the code making unnecessary reptitions, since we've
-#..already checked adding the ith value and all numbers before it.
+
+#This approach works by going through each number in the list, subtracting it from the target number, and looking if that number is in the list.
+#If that number isn't in the list, just store the current number and it's index into the seen dictionary, since it's a key-value pair.
+#If you're wondering, enumerate allows you to keep track of the number of iterations. We use this because we are storing "i", the index. Enumerate starts at 0.
+
+#Time complexity: O(n)
 
 #EX: [1,2,4,6,7], target : 10
 
-#While i is in the first iteration, we check 1+2, 1+4, 1+6, 1+7. None of these are 10, so now we start at 2 (index = 1).
-#Second i iteration: 2+4, 2+6, 2+7. None of these are 10, so now we start at 4 (index = 2).
-#Third i iteration: 4+6, 4+7. Since 4+6 is 10, the loop would end there.
+#EX: [1,4,5,7,8,9]
+
+#Step 1: 10 - 1 = 9, 9 isn't in the list, so this index-value pair is simply stored in the "seen" dictionary.
+#Step 2: 10 - 2 = 8, 8 isn't in the list, so this pair is also added to "seen"
+#Step 3: 10 - 4 = 6. 6 is in the list, so we simply return the indices of the two numbers that add up (seen[complement], i). The seen[complement] returns the index of the value of "complement" in the list, since...
+#... our line seen[num] = i stores indices along with values.
 
 #Reminder: Indices start at 0, not 1, in Python.
 

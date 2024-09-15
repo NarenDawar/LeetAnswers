@@ -8,3 +8,4 @@ class Solution:
 #So, in this instance, because there is no start or stop provided, it will by default consider the entire sequence, and -1 means to step backwards.
 #Stepping backwards means it will start at the last index and go towards the first index.
         
+#Time complexity: O(n)
