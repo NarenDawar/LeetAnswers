@@ -19,7 +19,7 @@ class Solution:
         
         return True
 
-#The solution to this problem involves using a dictionary and mapping values to one another. You progress through the lenght of one of the strings..
+#The solution to this problem involves using a dictionary and mapping values to one another. You progress through the length of one of the strings..
 #..(they're the same so it doesn't matter what you pick) and we save both the character in s and character in t at the current index. Next, we have to check if..
 #..s_to_t already has an entry with the letter we're on. In this case, we use s as the key pairs, but you can flip it, it doesn't matter. So we check for every character in s..
 #.. to see if it's already in our dictionary, and if so, we have to check if the letter we're looking at is connected to the same character in the other string as..

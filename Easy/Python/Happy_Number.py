@@ -21,6 +21,6 @@ class Solution:
 #EX: n = 19
 
 #Step 1: 1^2 + 9^2 = 82 = num (1 and 9 are the digits of 19 so we square them both and add).
-#Step 2: 8^2 + 2^2 = 68 = num (num is now 82, so the digits are 8 and 2, so we sqaure them and add them.)
+#Step 2: 8^2 + 2^2 = 68 = num (num is now 82, so the digits are 8 and 2, so we square them and add them.)
 #Step 3: 6^2 + 8^2 = 100 = num (num is now 68, so the digits are 6 and 8, so we square them and add them.)
 #Step 4: 1^2 + 0^2 + 0^2 = 1 = num -> 1 is reached so we return True.

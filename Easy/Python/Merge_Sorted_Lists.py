@@ -30,7 +30,7 @@ class Solution:
         return dummy.next
 
 #This approach utilizes a dummy starter node to make a new list. We traverse through both lists, comparing nodes and adding the smaller values first from either list.
-#This approach is pretty simple and traverses two lists at once until one is exhaused, effectively adding all remaining values from the longer list to the new merged list, "current".
+#This approach is pretty simple and traverses two lists at once until one is exhausted, effectively adding all remaining values from the longer list to the new merged list, "current".
 
 #Time complexity: O(n + m), where n & m are the number of nodes in list1 and list2, respectively.
 
@@ -39,4 +39,4 @@ class Solution:
 #Step 2: Now comparing index 0 (1) from list and index 1 from list 2 (2), list1.val is less than list2.val, so we now add the other 1.
 #Step 3: Comparing 3 & the second 2 from list2, list1.val isn't less than list2.val, so the second 2 is added to the "current" list.
 #Step 4: Comparing 3 and 5, 3 is less than 5, so we add the 3 to the current list.
-#...This pattern just follows throughout. List 1 gets exhuatsed first, so the remaining list 2 values (just 7) get appended to the "current" list in order as they show up in list2.
+#...This pattern just follows throughout. List 1 gets exhausted first, so the remaining list 2 values (just 7) get appended to the "current" list in order as they show up in list2.

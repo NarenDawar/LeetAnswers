@@ -13,7 +13,7 @@ class Solution:
         return k  # k is the count of elements not equal to val.
 
 #This problem is kind of similar to the removing duplicates solution, or at least it holds the same premise.
-#You iterate through the nums list, and if the current number doesn't equal the desired value to be removed, then set nums[k] to nums[i]. This allows us to replce gaps when we remove values.
+#You iterate through the nums list, and if the current number doesn't equal the desired value to be removed, then set nums[k] to nums[i]. This allows us to replace gaps when we remove values.
 #We also iterate k so that we can keep track of the number of elements that aren't equal to the desired value to be removed, since it must also be returned.
 
 #Time complexity: O(n)

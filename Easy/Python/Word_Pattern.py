@@ -16,7 +16,7 @@ class Solution:
         return True #Return true if you finish iterating and false is never thrown.
 
 #This problem is very similar to the isomorphic strings problem. However, since we're comparing a pattern to words, we have to make split the string by words.
-#Luckily, Python comes with a .split() function that allows us to split the words in a string and put them into a list. We can then iteratw through the list.
+#Luckily, Python comes with a .split() function that allows us to split the words in a string and put them into a list. We can then iterate through the list.
 #After this list is made, we iterate through the pattern string and for each character we check if key-value pairs exist and if the current mapping matches the recorded ones.
 
 #Time complexity: O(n)

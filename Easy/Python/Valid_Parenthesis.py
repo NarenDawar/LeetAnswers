@@ -30,7 +30,7 @@ class Solution:
 # The way this works is you create a dictionary with key-value pairs. In this case, the keys are the closing brackets. 
 #...This is important because we want to search for closing brackets, not opening ones (for this approach, but you could do either, it's just easier this way.)
 #..This approach works by going through each value in the stack, looking for closing brackets (if p_map[char] = ...) and by popping the top of the stack to see if it correlates with the closing bracket found.
-#..If the curent character in the string isn't a closing bracket, then we push it to the stack, since it must be an opening bracket.
+#..If the current character in the string isn't a closing bracket, then we push it to the stack, since it must be an opening bracket.
 
 #Time complexity: O(n)
 

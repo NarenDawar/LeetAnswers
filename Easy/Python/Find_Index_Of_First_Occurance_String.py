@@ -18,7 +18,7 @@ class Solution:
         return -1
 
 #This approach simply gets the length of the two strings, and iterates through haystack in sub-portions to see if any of the partitions are equal to needle.
-#This answer is pretty simple and there is a more efficient method: simply using the .find() method. This is a python function that will immediately just find the index of the occurence.
+#This answer is pretty simple and there is a more efficient method: simply using the .find() method. This is a python function that will immediately just find the index of the occurrence.
 
 #Time complexity: O(n*m)
 
