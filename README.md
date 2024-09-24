@@ -3,3 +3,11 @@ A repository of intuitive leetcode answers from a  2 college kids. This is mainl
 
 Piyush Komali - komali.piyush@gmail.com
 Naren Dawar - narendaw2@gmail.com
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [0009-palindrome-number](https://github.com/piyushkomali/LeetAnswers/tree/master/0009-palindrome-number) |
+<!---LeetCode Topics End-->
