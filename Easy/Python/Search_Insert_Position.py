@@ -24,7 +24,7 @@ class Solution:
 #Time complexity: O(log n)
 
 #EX: [1,3,4,5,6,7,8], target = 2
-#Step 1: Find mid, 0+6 //2 = 3, nums[3] is 5, 5 > 2, so right is now 2.
+#Step 1: Find mid, 0 + 6 //2 = 3, nums[3] is 5, 5 > 2, so right is now 2.
 #Step 2: Find mid, 0 + 2 // 2 = 1, nums[1] is 3, 3 > 2, so right is now 0.
 #Step 3: Find mid, 0 + 0 // 2 = 1, nums[0] is 1, 1 < 2, so left is now 1.
 #Left is greater than right, so the loop ends there. Our left value is 1, and that's the index where we'd input 2, since it'd be between 1 and 3.
