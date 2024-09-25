@@ -1,3 +1,9 @@
+#This code basically takes the first word in the list and continue reducing it until the prefix matches for all other words in the list.
+#For example, if I had "flower", "flour", and "flow", the code would reduce flower -> flo because all words have the same prefix. 
+# The .startswith() is a built in python function that checks if a word starts with a given string of characters or individual character.
+
+#Time complexity: O(n * m) where n is the number of strings and m is the length of the shortest string in the array.
+
 class Solution:
     def longestCommonPrefix(self, strs: list[str]) -> str: #Defining the return type.
         # Edge case: if the input list is empty, return an empty string.
@@ -18,8 +24,3 @@ class Solution:
 
         return prefix
 
-#This code basically takes the first word in the list and continue reducing it until the prefix matches for all other words in the list.
-#For example, if I had "flower", "flour", and "flow", the code would reduce flower -> flo because all words have the same prefix. 
-# The .startswith() is a built in python function that checks if a word starts with a given string of characters or individual character.
-
-#Time complexity: O(n * m) where n is the number of strings and m is the length of the shortest string in the array.

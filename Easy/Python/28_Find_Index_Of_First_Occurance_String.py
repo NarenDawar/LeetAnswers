@@ -1,3 +1,8 @@
+#This approach simply gets the length of the two strings, and iterates through haystack in sub-portions to see if any of the partitions are equal to needle.
+#This answer is pretty simple and there is a more efficient method: simply using the .find() method. This is a python function that will immediately just find the index of the occurrence.
+
+#Time complexity: O(n*m)
+
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         # Get the lengths of the haystack and needle variables.
@@ -16,11 +21,6 @@ class Solution:
         
         # If no match is found, return -1.
         return -1
-
-#This approach simply gets the length of the two strings, and iterates through haystack in sub-portions to see if any of the partitions are equal to needle.
-#This answer is pretty simple and there is a more efficient method: simply using the .find() method. This is a python function that will immediately just find the index of the occurrence.
-
-#Time complexity: O(n*m)
 
 #EX: haystack = "imnotmadbutsad" & needle = "sad"
 #Step 1: i = 0, check if haystack[0:3] == needle, haystack[0:3] is imn, so this doesn't match.

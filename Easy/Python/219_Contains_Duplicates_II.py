@@ -1,3 +1,10 @@
+#This problem can be done in another way without using hashmaps, but using a map (dictionary in Python) makes this problem a lot easier.
+#This approach saves numbers and correlating indices in the list. So, as we iterate, we check if the current number is in our dictionary..
+#..and if it is, we check if it's current index minus the index of the prior occurrence is <= k. If so, we can immediately return True.
+#If the number isn't in our dictionary, we simply add it & it's index to the dictionary. Indices are also updated if i - num_indices[unum] > k.
+
+#Time complexity: O(n)
+
 class Solution:
     def containsNearbyDuplicate(self, nums: list[int], k: int) -> bool:
         # Dictionary to store the last index of each number.
@@ -16,13 +23,6 @@ class Solution:
         
         # Return False is nothing found.
         return False
-
-#This problem can be done in another way without using hashmaps, but using a map (dictionary in Python) makes this problem a lot easier.
-#This approach saves numbers and correlating indices in the list. So, as we iterate, we check if the current number is in our dictionary..
-#..and if it is, we check if it's current index minus the index of the prior occurrence is <= k. If so, we can immediately return True.
-#If the number isn't in our dictionary, we simply add it & it's index to the dictionary. Indices are also updated if i - num_indices[unum] > k.
-
-#Time complexity: O(n)
 
 #EX: nums = [1,0,1,1], k = 1
 #Step 1: Index 0, value of 1, is not already in the dictionary (hashmap), so we add it to the dictionary.

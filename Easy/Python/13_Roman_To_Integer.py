@@ -1,3 +1,9 @@
+#This code revolves around making a dictionary in python that assigns values to strings.
+#You simply reverse the string and traverse through while keeping track of the "previous value" variable.
+#If the current value is less than the previous value, then we know that we must subtract the current value from the integer total.
+
+#Time complexity: O(n)
+
 class Solution:
     def romanToInt(self, s: str) -> int:
         # Map to assign value to characters.
@@ -24,10 +30,6 @@ class Solution:
         
         return total
 
-#This code revolves around making a dictionary in python that assigns values to strings.
-#You simply reverse the string and traverse through while keeping track of the "previous value" variable.
-#If the current value is less than the previous value, then we know that we must subtract the current value from the integer total.
 
-#Time complexity: O(n)
-
-#EX: IX, you start at X, and current value is now 10. Since current value isn't less than previous, since previous doesn't exist, our total is now 10. Now we iterate, and since I (1) is less than X(10), we subtract 1 from the total.
+#EX: IX, you start at X, and current value is now 10. Since current value isn't less than previous, since previous doesn't exist, our total is now 10.
+#Now we iterate, and since I (1) is less than X(10), we subtract 1 from the total.

@@ -1,3 +1,8 @@
+#This approach utilizes a dummy starter node to make a new list. We traverse through both lists, comparing nodes and adding the smaller values first from either list.
+#This approach is pretty simple and traverses two lists at once until one is exhausted, effectively adding all remaining values from the longer list to the new merged list, "current".
+
+#Time complexity: O(n + m), where n & m are the number of nodes in list1 and list2, respectively.
+
 class ListNode:
     def __init__(self, val=0, next=None): #This is provided for us, defining a list node. Every node has a value and link to the next node.
         self.val = val
@@ -28,11 +33,6 @@ class Solution:
         
         # Return the merged list, starting from the node after the dummy (since it has no value).
         return dummy.next
-
-#This approach utilizes a dummy starter node to make a new list. We traverse through both lists, comparing nodes and adding the smaller values first from either list.
-#This approach is pretty simple and traverses two lists at once until one is exhausted, effectively adding all remaining values from the longer list to the new merged list, "current".
-
-#Time complexity: O(n + m), where n & m are the number of nodes in list1 and list2, respectively.
 
 #EX: [1,3,4,5] & [1,2,2,5,7]
 #Step 1: Traversing through the first condition (list1.val < list2.val), 1 isn't less than 1, so we add the value from list, which is also 1.

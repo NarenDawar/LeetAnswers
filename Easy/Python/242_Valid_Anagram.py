@@ -1,3 +1,8 @@
+#This problem is extremely easy to solve in python due to a given sorted() function. This function takes an iterable object..
+#..like a list or string, and sorts the element in alphabetical / numerical order, depending on the data type.
+
+#Time complexity: O(n log n)
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
          # Step 1: Sort both strings.
@@ -6,11 +11,6 @@ class Solution:
         
         # Step 2: Compare the sorted versions.
         return sorted_s == sorted_t
-
-#This problem is extremely easy to solve in python due to a given sorted() function. This function takes an iterable object..
-#..like a list or string, and sorts the element in alphabetical / numerical order, depending on the data type.
-
-#Time complexity: O(n log n)
 
 #EX: s = anagrams, t = gramanas
 
