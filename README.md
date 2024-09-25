@@ -16,7 +16,7 @@ We aim to:
 - 🚀 **Continuous Updates**: More solutions are being added regularly as we solve new problems.
 
 ## **How to Use**
-Simply browse through the repository, select the problem you’re interested in, and open the corresponding Python file to view the solution. Feel free to fork the repo, submit issues, or contribute improvements!
+Simply browse through the repository, select the problem you’re interested in, and open the corresponding Python file to view the solution. Feel free to fork the repo, submit issues, or point out anything that can be optimized!
 
 ## **Contributors** 
 - **Naren Dawar**  
