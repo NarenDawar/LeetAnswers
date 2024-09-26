@@ -21,10 +21,10 @@ Simply browse through the repository, select the problem you’re interested in,
 ## **Contributors** 
 - **Naren Dawar**  
   [narendaw2@gmail.com](mailto:narendaw2@gmail.com)  
-  [GitHub](https://github.com/NarenDawar)
+  [GitHub](https://github.com/NarenDawar) | [LinkedIn](https://www.linkedin.com/in/naren-dawar/)
 - **Piyush Komali**  
   [komali.piyush@gmail.com](mailto:komali.piyush@gmail.com)  
-  [GitHub](https://github.com/piyushkomali) 
+  [GitHub](https://github.com/piyushkomali) | [LinkedIn](www.linkedin.com/in/piyush-komali-53bb09240)
 
 ## **Contact**
 We welcome feedback, questions, or collaboration inquiries! Feel free to reach out to us via the email addresses provided above.
