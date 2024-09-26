@@ -1,3 +1,9 @@
+#This approach works by going through each number in the list, subtracting it from the target number, and looking if that number is in the list.
+#If that number isn't in the list, just store the current number and it's index into the seen dictionary, since it's a key-value pair.
+#If you're wondering, enumerate allows you to keep track of the number of iterations. We use this because we are storing "i", the index. Enumerate starts at 0.
+
+#Time complexity: O(n)
+
 nums = []
 target = "SOME_INTEGER"
 
@@ -17,13 +23,6 @@ class Solution:
             
             # Otherwise, store the current number and its index
             seen[num] = i
-
-
-#This approach works by going through each number in the list, subtracting it from the target number, and looking if that number is in the list.
-#If that number isn't in the list, just store the current number and it's index into the seen dictionary, since it's a key-value pair.
-#If you're wondering, enumerate allows you to keep track of the number of iterations. We use this because we are storing "i", the index. Enumerate starts at 0.
-
-#Time complexity: O(n)
 
 #EX: [1,2,4,6,7], target : 10
 

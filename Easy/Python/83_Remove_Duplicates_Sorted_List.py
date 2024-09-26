@@ -1,3 +1,11 @@
+#Linked Lists are a fairly straightforward data type, and although they can seem daunting, they have very few features (singly linked lists, at least).
+#With a singly linked list, we have to consider a few things. First, we can reference the head node, which is how we start this process.
+#Secondly, every node has a "value" and "next" aspect. The "value" aspect is simply what is inside the node, and the "next" aspect points to the next node.
+#So, when we want to remove duplicates, if they're consecutive, you can change the current nodes next reference to point to the node after the next node.
+#(current.next = current.next.next) changes the "next" value of the node to point to the next next node, effectively removing the middle node between the two.
+
+#Time complexity: O(1)
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -18,14 +26,6 @@ class Solution:
                 current = current.next
                 
         return head
-
-#Linked Lists are a fairly straightforward data type, and although they can seem daunting, they have very few features (singly linked lists, at least).
-#With a singly linked list, we have to consider a few things. First, we can reference the head node, which is how we start this process.
-#Secondly, every node has a "value" and "next" aspect. The "value" aspect is simply what is inside the node, and the "next" aspect points to the next node.
-#So, when we want to remove duplicates, if they're consecutive, you can change the current nodes next reference to point to the node after the next node.
-#(current.next = current.next.next) changes the "next" value of the node to point to the next next node, effectively removing the middle node between the two.
-
-#Time complexity: O(1)
 
 #EX: [1 -> 1 -> 2 -> 3 -> 3 -> 4 -> 5]
 #When we start with this example, we start with the head node, which is the leftmost node. Then, while we have a current and next node that exist, we iterate.

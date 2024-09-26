@@ -1,3 +1,8 @@
+#To solve this problem, we utilize a tracker, which is "k" in this case. In any instance where the current number doesn't equal the prior number, we move k up. 
+#If the numbers are equal, then we keep the value of k, because k covers that duplicate, so we wait until we find another unique number to remove the duplicate since k covers the duplicate index.
+
+#Time complexity: O(n)
+
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
         # Edge case check: if the array is empty.
@@ -15,11 +20,6 @@ class Solution:
                 k += 1  # Move k to the next position.
         
         return k  # k is the count of unique elements.
-
-#To solve this problem, we utilize a tracker, which is "k" in this case. In any instance where the current number doesn't equal the prior number, we move k up. 
-#If the numbers are equal, then we keep the value of k, because k covers that duplicate, so we wait until we find another unique number to remove the duplicate since k covers the duplicate index.
-
-#Time complexity: O(n)
 
 #EX: [1,1,2,3,5,5]
 #Step 1: k=1, nums[1] == nums[0], so nothing happens.

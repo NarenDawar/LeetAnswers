@@ -1,3 +1,10 @@
+#The approach to this problem is really easy using a dictionary (otherwise known as hash map in other languages). Dictionaries revolve around..
+#..storing key value pairs, so in our case we're storing individual characters and number of times they show up in our magazine string.
+#We return false in the instance that a character we encounter in "ransomNote" isn't in"magazine or if we have more of a character in ransomNote than magazine.
+#We iterate through magazine first, create our key-value pairs, then iterate through remote and see if everything checks out.
+
+#Time complexity: O(n * m)
+
 class Solution(object):
     def canConstruct(self, ransomNote, magazine):
         characters = {} #Dictionary for saving characters and number of occurence pairs.
@@ -16,13 +23,6 @@ class Solution(object):
                 return False
         
         return True
-
-#The approach to this problem is really easy using a dictionary (otherwise known as hash map in other languages). Dictionaries revolve around..
-#..storing key value pairs, so in our case we're storing individual characters and number of times they show up in our magazine string.
-#We return false in the instance that a character we encounter in "ransomNote" isn't in"magazine or if we have more of a character in ransomNote than magazine.
-#We iterate through magazine first, create our key-value pairs, then iterate through remote and see if everything checks out.
-
-#Time complexity: O(n * m)
 
 #EX: magazine: "I am here", ransomNote: "hege"
 #After iterating through the magazine text, our dictionary would be: {"I" : 1, "a" : 1, "m" : 1, "h" : 1, "e" : 2, "r" : 1}

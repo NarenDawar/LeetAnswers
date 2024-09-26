@@ -1,3 +1,10 @@
+#This problem isn't too hard to solve as long as you work from the back to the front. We use a range of 0 to length - 1 since that would be the last possible index.
+#We use -1 twice, the first one represents the finishing point, and the other represents the steps. -1 steps means that we work backwards.
+#Whenever we reach a digit less than 9, we add one and return the list, since that would be the last addition necessary. Otherwise, we set it to 0, since 1 + 9 = 10, meaning we'd have to add that 1 to the next element.
+#Here's an example:
+
+#Time complexity: O(n)
+
 class Solution:
     def plusOne(self, digits):
         # Start from the last digit and move left (because -1 step).
@@ -10,14 +17,7 @@ class Solution:
         # If all the digits were 9, we need to add a leading 1.
         return [1] + digits
 
-#This problem isn't too hard to solve as long as you work from the back to the front. We use a range of 0 to length - 1 since that would be the last possible index.
-#We use -1 twice, the first one represents the finishing point, and the other represents the steps. -1 steps means that we work backwards.
-#Whenever we reach a digit less than 9, we add one and return the list, since that would be the last addition necessary. Otherwise, we set it to 0, since 1 + 9 = 10, meaning we'd have to add that 1 to the next element.
-#Here's an example:
-
-#Time complexity: O(n)
-
-# [1,2,3,4,5]
+# EX: [1,2,3,4,5]
 #Step 1: Starting from 5, we add 1, and since it's less than 9, we simply stop there. So, we return [1,2,3,4,6]
 
 # [1,2,9,9]

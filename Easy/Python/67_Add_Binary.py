@@ -1,3 +1,9 @@
+#This problem is a bit harder than the other beginner problems.The general idea behind this problem is setting the two strings to equal length...
+#..using the zfill() function (this just adds zeros since its binary.). After that, we add the two values together after converting them to integers, then..
+#..getting the remainder from the bit_sum and updating the carry. The remainder (%) is how we get our zeros and ones, and floor dividing by 2 follows the ...
+#..rules of binary, since a number like 0101 in binary represents 8(0) + 4(1) + 2(0) + 1(1) = 5. Lastly, after you add your carry value, reverse the result sincr the..
+#..bits were added in reverse order.
+
 def add_binary(a, b):
     result = []
     carry = 0
@@ -25,13 +31,6 @@ def add_binary(a, b):
 
     # Reverse the result and join it into a string.
     return ''.join(reversed(result))
-
-
-#This problem is a bit harder than the other beginner problems.The general idea behind this problem is setting the two strings to equal length...
-#..using the zfill() function (this just adds zeros since its binary.). After that, we add the two values together after converting them to integers, then..
-#..getting the remainder from the bit_sum and updating the carry. The remainder (%) is how we get our zeros and ones, and floor dividing by 2 follows the ...
-#..rules of binary, since a number like 0101 in binary represents 8(0) + 4(1) + 2(0) + 1(1) = 5. Lastly, after you add your carry value, reverse the result sincr the..
-#..bits were added in reverse order.
 
 #Time complexity: O(n)
 
