@@ -26,7 +26,7 @@
 #Step 2: result = 1, 1 ^ 2 = 3, so result is now 3.
 #Step 4: result = 3, 3 ^ 1 = 2, so result is now 2.
 #Step 5: result = 2, 2 ^ 2 = 0, so result is now 0.
-#Step 6: result = 4, 4 ^ 0 = 4, so result is 4.
+#Step 6: result = 0, 0 ^ 4 = 4, so result is 4.
 
 #Result is 4, and that value is returned, which is true!
 
