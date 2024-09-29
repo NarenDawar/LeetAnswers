@@ -31,5 +31,19 @@ class Solution:
         return total
 
 
-#EX: IX, you start at X, and current value is now 10. Since current value isn't less than previous, since previous doesn't exist, our total is now 10.
-#Now we iterate, and since I (1) is less than X(10), we subtract 1 from the total.
+#EX: Inout: s = "III"
+#    Output: 3
+#    First you start at I; total = 1
+#    Next you move to I, total = 1 + 1 = 2
+#    Next you move to I, total = 2 + 1 = 3
+
+
+#EX: Input: s = "MCMXCIV"
+#    Output: 1994
+#   First you start at V; total = 5
+#   Next you move to I, however, since I is less than V, we subtract 1 from the total; total = 4
+#   Next you move to C; total = 100 + 4 = 104
+#   Next you move to X, however, since X is less than C, we subtract 10 from the total; total = 104 - 10 = 94
+#   Next you move to M; total = 1000 + 94 = 1094
+#   Next you move to C, however, since C is less than M, we subtract 100 from the total; total = 1094 - 100 = 994
+#   Next you move to X, total = 994 + 1000 = 1994
