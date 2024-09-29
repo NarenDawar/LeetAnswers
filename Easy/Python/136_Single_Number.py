@@ -28,6 +28,10 @@
 #Step 5: result = 2, 2 ^ 2 = 0, so result is now 0.
 #Step 6: result = 0, 0 ^ 4 = 4, so result is 4.
 
+#Another good way to think of what this is doing is looking at this from a discrete math perspective...
+#.. essentially the solution is ([(1 ^ 2) ^ (1 ^ 2)] ^ 4) which through the associative property ..
+#.. is equivalent to ((1 ^ 1) ^ (2 ^ 2) ^ 4) == ((0 ^ 0) ^ 4) == (0 ^ 4) == 4
+
 #Result is 4, and that value is returned, which is true!
 
 
