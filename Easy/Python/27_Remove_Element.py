@@ -1,3 +1,9 @@
+#This problem is kind of similar to the removing duplicates solution, or at least it holds the same premise.
+#You iterate through the nums list, and if the current number doesn't equal the desired value to be removed, then set nums[k] to nums[i]. This allows us to replace gaps when we remove values.
+#We also iterate k so that we can keep track of the number of elements that aren't equal to the desired value to be removed, since it must also be returned.
+
+#Time complexity: O(n)
+
 class Solution:
     def removeElement(self, nums: list[int], val: int) -> int:
         # Initialize the pointer k for the non-val-equivalent elements.
@@ -11,12 +17,6 @@ class Solution:
                 k += 1  # Move k to the next position.
         
         return k  # k is the count of elements not equal to val.
-
-#This problem is kind of similar to the removing duplicates solution, or at least it holds the same premise.
-#You iterate through the nums list, and if the current number doesn't equal the desired value to be removed, then set nums[k] to nums[i]. This allows us to replace gaps when we remove values.
-#We also iterate k so that we can keep track of the number of elements that aren't equal to the desired value to be removed, since it must also be returned.
-
-#Time complexity: O(n)
 
 #EX: [1,3,4,7,2,4,3,6,4], val = 4
 #Step 1: 1 != 4, so nums[0] = 1 (we basically just made it equal to 1 again), k = 1

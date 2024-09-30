@@ -1,3 +1,9 @@
+#This problem works by returning numbers in an endless loop or returning 1 eventually. In this problem we take a number and..
+#..replace the number by the sum of the squares of its digits. We keep doing this and return True if 1 is returned or..
+#..return False if a cycle is detected (this means a sum is created that we've already seen and is already present in the "seen" set).
+
+#Time complexity: O(log n)
+
 class Solution:
     def isHappy(self, n: int) -> bool:
         seen = set() #Initialize a set.
@@ -11,12 +17,6 @@ class Solution:
             n = sum(int(digit) ** 2 for digit in str(n))
         
         return True
-
-#This problem works by returning numbers in an endless loop or returning 1 eventually. In this problem we take a number and..
-#..replace the number by the sum of the squares of its digits. We keep doing this and return True if 1 is returned or..
-#..return False if a cycle is detected (this means a sum is created that we've already seen and is already present in the "seen" set).
-
-#Time complexity: O(log n)
 
 #EX: n = 19
 
