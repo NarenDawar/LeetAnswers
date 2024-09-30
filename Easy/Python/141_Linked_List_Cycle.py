@@ -15,8 +15,8 @@ class Solution:
         slow, fast = head, head
         
         # Traverse the list with two pointers
-        while fast and fast.next:
-            slow = slow.next          # Move slow pointer by 1 step
+        while fast and fast.next:                   # Note: the reason that this is fast and fast.next is because we just want to make sure fast.next is not None ...
+            slow = slow.next          # Move slow pointer by 1 step                                            ... so we dont call None.next from fast.next.next
             fast = fast.next.next     # Move fast pointer by 2 steps
             
             # If slow and fast meet, there's a cycle
