@@ -6,6 +6,8 @@
 #Once you splice the list and re-add it after splicing, you'll get the correct number of rotations. The addition order DOES matter, so you..
 #..have to add the values with [-k:] first and then put the [:-k] second.
 
+#Time complexity: O(n)
+
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         n = len(nums)
