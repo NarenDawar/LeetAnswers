@@ -7,9 +7,9 @@
 
 class Solution(object):
     def canConstruct(self, ransomNote, magazine):
-        characters = {} #Dictionary for saving characters and number of occurence pairs.
+        characters = {} # Dictionary for saving characters and number of occurence pairs.
         #
-        for char in magazine: #Iterate through magazine and store all characters and number of times they occur.
+        for char in magazine: # Iterate through magazine and store all characters and number of times they occur.
             if char not in characters:
                 characters[char] = 1
             else:
@@ -25,6 +25,7 @@ class Solution(object):
         return True
 
 #EX: magazine: "I am here", ransomNote: "hege"
+
 #After iterating through the magazine text, our dictionary would be: {"I" : 1, "a" : 1, "m" : 1, "h" : 1, "e" : 2, "r" : 1}
 #Then we'd iterate through the ransomNote by checking each character and verifying that it's in magazine and still has a value > 0.
 #Hege has 1 H, 2 E's, and 1 G, and all the characters and values line us except for g, so this would return false.

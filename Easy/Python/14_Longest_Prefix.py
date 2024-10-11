@@ -5,7 +5,7 @@
 #Time complexity: O(n * m) where n is the number of strings and m is the length of the shortest string in the array.
 
 class Solution:
-    def longestCommonPrefix(self, strs: list[str]) -> str: #Defining the return type.
+    def longestCommonPrefix(self, strs: list[str]) -> str: # Defining the return type.
         # Edge case: if the input list is empty, return an empty string.
         if not strs:
             return ""

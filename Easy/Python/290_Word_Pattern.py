@@ -7,19 +7,19 @@
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
 
-        my_dict = {} #Create a dictionary to store pairs.
-        list_check = s.split() #Split the string by words (turns into a list).
+        my_dict = {} # Create a dictionary to store pairs.
+        list_check = s.split() # Split the string by words (turns into a list).
 
         for i in range(len(pattern)):
-            pattern_char = pattern[i] #Save the pattern character.
-            list_word = list_check[i] #Save the current list word.
+            pattern_char = pattern[i] # Save the pattern character.
+            list_word = list_check[i] # Save the current list word.
 
             if(pattern_char in my_dict): 
                 if(my_dict[pattern_char] != list_word): 
-                    return False #Return false if letter is mapped to different word already.
+                    return False # Return false if letter is mapped to different word already.
             else:
                 my_dict[pattern_char] = list_word
-        return True #Return true if you finish iterating and false is never thrown.
+        return True # Return true if you finish iterating and false is never thrown.
 
 #EX: pattern: "abba", s: "dog cat cat dog"
 
