@@ -4,7 +4,7 @@
 # Min needs to be highest possible value to make sure that the first array value is set to min.
 # Iterate through the prices array and compare min to current price to make sure you have the lowest price possible set to min and in turn the max profit..
 # in the same loop calculate the profit from the min price to the current price you are looking at and decide whether that is greater than the max profit.
-#                                    if it is greater than maxprofit then set that value to maxprofit
+#If it is greater than maxprofit, then set that value to maxprofit.
 # return maxprofit
 
 #Time complexity: O(n)

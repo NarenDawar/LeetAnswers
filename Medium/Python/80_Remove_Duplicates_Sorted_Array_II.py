@@ -13,17 +13,17 @@ class Solution:
             return len(nums)  # If the array has 2 or fewer elements, no need to modify.
 
         # Initialize two pointers
-        # `i` is the slow pointer, keeping track of the position for the next valid element
-        # Start from index 2, because the first two elements are always allowed
+        # `i` will be the slow pointer, keeping track of the position for the next valid element.
+        # Start from index 2, because the first two elements are always allowed.
         i = 2  
 
-        for j in range(2, len(nums)):  # `j` is the fast pointer going through each element
-            # Check if the current element at `j` is different from the element two positions back
+        for j in range(2, len(nums)):  # `j` is the fast pointer going through each element.
+            # Check if the current element at `j` is different from the element two positions back.
             if nums[j] != nums[i - 2]:
-                nums[i] = nums[j]  # Update the element at index `i`
-                i += 1  # Move `i` to the next position
+                nums[i] = nums[j]  # Update the element at index `i`.
+                i += 1  # Move `i` to the next position.
 
-        return i  # `i` is the length of the array after removing duplicates
+        return i  # `i` is the length of the array after removing duplicates.
 
 #EX: [1,1,1,2,2,3]
 

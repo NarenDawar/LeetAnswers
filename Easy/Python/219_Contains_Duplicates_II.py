@@ -25,6 +25,7 @@ class Solution:
         return False
 
 #EX: nums = [1,0,1,1], k = 1
+
 #Step 1: Index 0, value of 1, is not already in the dictionary (hashmap), so we add it to the dictionary.
 #Step 2: Index 1, value of 0, is not already in the dictionary, so we add it.
 #Step 3: Index 2, value of 1, is already in the dictionary, so we check if abs(index1 - index 2) <= k. So 2 - 0 is 2, which isn't <= k, so we update..
