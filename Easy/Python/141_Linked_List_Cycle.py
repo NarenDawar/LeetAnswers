@@ -30,6 +30,6 @@ class Solution:
 
 #Step 1: The slow pointer is at the node after the head (2). The fast pointer is at 3.
 #Step 2: The slow pointer is now at 3, while the fast pointer is at 1, since after 4 is loops back to 1.
-#Step 3: The slow pointe is now at 4, and the fast pointer is now at 3.
+#Step 3: The slow pointer is now at 4, and the fast pointer is now at 3.
 #Step 4: The slow pointer is at 1, and the fast pointer is at 1. The two are equal, so we return true.
         
