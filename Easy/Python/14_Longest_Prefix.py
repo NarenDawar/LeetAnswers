@@ -24,3 +24,13 @@ class Solution:
 
         return prefix
 
+#Example:
+#Input: strs = ["flower", "flow", "flight"]
+
+# First prefix would start as 'flower'.
+# Next would would begin looking at 'flow' to see if it matches with 'flower', since it doesn't we truncate by 1 character each time until it matches. 'flower' -> 'flowe' -> 'flow'
+# We end the 2nd iteration with 'flow' as our prefix
+# In the last iteration we check if 'flight' matches with flow. Since it doesn't we truncate by 1 character each time until it matches. 'flow' -> 'flo' -> 'fl' 
+#       NOTE: When we truncate the prefix we also check only up to the length of prefix. 
+#        for example if our prefix is 'flow' and we check 'flight', we are really only checking if 'flow' and 'flig' match. 
+#        Hence we use the .startsWith() function
