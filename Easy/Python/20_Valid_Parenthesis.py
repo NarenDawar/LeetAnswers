@@ -33,6 +33,6 @@ class Solution:
 
         # After processing all characters, the stack should be empty.
         return not stack
-
+#Video Solution: https://youtu.be/cW843v3qHUw
 #EX: Imagine a string like so: "[{()]", the first three elements would be pushed to the stack, so the stack would look like "({[" (the last item pushed is the top of the stack, so "(" is the top of the stack). The first closing bracket is a normal parenthesis, and the top of the stack (which we pop) is also a normal parenthesis, so far so good.
 # Now, the next parenthesis is a closing bracket ("]"). Now, if we pop the top of the stack, it's currently "{" (since we popped the "("), which doesn't correlate with the closing bracket, so this string would return false.
